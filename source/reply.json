@@ -1,0 +1,5 @@
+{
+    "(FCC|freeCodeCamp)\\s*成都.*官?方?网站?": "https://fcc-cd.tk/",
+    "(FCC|freeCodeCamp)\\s*中(文|国).*官?方?网站?": "https://freecodecamp.one/",
+    "(FCC|freeCodeCamp)\\s*(国际|全球).*官?方?网站?": "https://freecodecamp.org/"
+}
