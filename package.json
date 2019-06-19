@@ -1,0 +1,39 @@
+{
+    "name": "@fcc-cdc/wechat-robot",
+    "version": "0.1.0",
+    "description": "WeChat group administrator of FCC ChengDu community",
+    "license": "AGPL-3.0",
+    "author": "shiy2008@gmail.com",
+    "homepage": "https://github.com/FreeCodeCamp-Chengdu/wechat-robot#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/FreeCodeCamp-Chengdu/wechat-robot.git"
+    },
+    "bugs": {
+        "url": "https://github.com/FreeCodeCamp-Chengdu/wechat-robot/issues"
+    },
+    "main": "index.js",
+    "scripts": {
+        "format": "prettier --write \"{,!(node_modules|.git)/**/}*.{html,md,css,less,js,json,yml,yaml}\"",
+        "start": "node index"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run format  &&  git add ."
+        }
+    },
+    "dependencies": {
+        "puppeteer": "^1.17.0",
+        "qrcode-terminal": "^0.12.0",
+        "wechaty": "^0.26.1",
+        "wechaty-puppet-puppeteer": "^0.16.1"
+    },
+    "devDependencies": {
+        "husky": "^2.4.1",
+        "prettier": "^1.18.2"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true
+    }
+}
